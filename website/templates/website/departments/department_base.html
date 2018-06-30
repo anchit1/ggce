@@ -1,0 +1,41 @@
+{% extends "website/base.html" %}
+{% block content %} 
+  {% block static_files %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/style_department.css' %}"> 
+  {% endblock static_files %}
+
+  <div style="background: #fafafa;">
+    <div id="content-container" class="ui container">
+      <div class="ui container text header huge">
+        {% block department_title %}{% endblock department_title %}
+      </div>
+
+      <div id="grid-container" class="ui stackable grid">
+        <div id="sidebar-left" class="three wide column">
+          <div class="ui vertical fluid menu borderless huge">
+            <div class="item">
+              <div class="header">Quick Links</div>
+              <div class="ui divider"></div>
+              <div class="menu">
+                <a class="item" href="">About</a>
+                <a class="item" href="">Faculty</a>
+                <a class="item" href="">Vision</a>
+                <a class="item" href="">Salient Features</a>
+                <a href="" class="item">News</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="main-content" class="ui segment thirteen wide column">
+          <div class="ui header">
+            {% block department_current_section %}{% endblock department_current_section %}
+          </div>
+          <div class="ui divider"></div>
+          {% block department_contents %}{% endblock department_contents %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

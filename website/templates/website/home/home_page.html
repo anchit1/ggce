@@ -1,0 +1,117 @@
+{% extends "website/base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block static_files %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'website/css/home/home_page.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/home/tiny_slider.min.css' %}">
+{% endblock static_files %}
+
+{% block content %}
+  {% load static %}
+  <div id="homepage-content">
+    <!-- <img id="home-image" src="{% static 'website/images/home/RandOne.jpg' %}"> -->
+    <div id="main-container">
+      <div class="ui container doubling stackable two column grid">
+        <div id="adm-enquiry" class="column">
+          <div class="ui header huge">Lorem Ipsum Dolor</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula sagittis diam, eu semper elit vehicula et. Ut bibendum arcu quis nulla luctus, et pharetra nisl finibus. Maecenas sit amet diam ex. Sed vulputate consequat quam, ut dignissim neque condimentum accumsan. </p>
+          <button>Admission Enquiry</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="statistics-container">
+      <div class="ui header centered large" style="padding-bottom: 1.5rem;">OUR ACHIEVEMENTS</div>
+  
+      <div class="ui statistics container center aligned grid">
+        <div class="grey statistic">
+          <div class="value">18</div>
+          <div class="label">Chancellor Awards</div>
+        </div>
+  
+        <div class="statistic grey">
+          <div class="value">500+</div>
+          <div class="label">Students placed</div>
+        </div>
+  
+        <div class="statistic grey">
+          <div class="value">15+</div>
+          <div class="label">Companies visited <br> for recruitment</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block containing GGCE features -->
+    <div id="features-container">
+      <div class="ui grid stackable container centered three column grid">
+        <div class="ui column">
+          <img src="{% static 'website/images/home/ggce_acad.jpg' %}" class="ui large image centered">
+          <div class="ui header">Academics</div>
+          <p>GGCE offers a diverse range of courses which include</p>
+          <div class="ui bulleted list">
+            <div class="item">B. Com.</div>
+            <div class="item">B. B. A.</div>
+            <div class="item">B. Sc.</div>
+          </div>
+        </div>
+
+        <div class="ui column centered">
+          <img src="{% static 'website/images/home/ggce_sport.jpg' %}" class="ui large image">
+          <div class="ui header">Sports & Activities</div>
+          <p>We offer a host of extra-curricular activities which include sport activities such as cricket, badminton etc. We also have other activities such as Gyanotsav etc.</p>
+        </div>
+
+        <div class="ui column centered">
+          <img src="{% static 'website/images/home/ggce_lab.jpg' %}" class="ui large image">
+          <div class="ui header">Facilities</div>
+          <p>GGCE has a adequately equipped with the latest technologies and equipments which will help in inculcating a positivelearning environment among the students.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="recruiters-container">
+      <div class="ui header centered huge">OUR RECRUITERS & PARTNERS</div>
+      <div class="ui container">
+        <div class="my-slider">
+          <div>
+            <img src="{% static 'website/images/home/company_logos/amdocs.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/ibm.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/microsoft.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/oracle.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/tcs.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/zensar.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/sap.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/cognizant.png' %}" class="ui small image">
+          </div>
+          <div>
+            <img src="{% static 'website/images/home/company_logos/hexaware.png' %}" class="ui small image">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'website/js/home/tiny_slider.min.js' %}"></script>
+<script src="{% static 'website/js/home/home_page.js' %}"></script>
+{% endblock scripts %}

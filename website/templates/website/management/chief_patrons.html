@@ -1,0 +1,60 @@
+{% extends "website/management/mgmt_base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block static_files %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/mgmt.css' %}">
+{% endblock %}
+
+{% block mgmt_content %}
+    {% load static %}
+
+    <div class="left-quote">
+        <div>
+            <img src="{% static 'website/images/management/dcjain.jpg' %}" class="ui right floated image circular">
+        </div>
+        <blockquote>
+            <i class="left quote icon"></i>
+            Our approach is truly not only to prepare top professional but to craft a complete human being with a
+            dynamic
+            sense
+            of belonging and responsibility in the realization of the humanity, this realization is the ultimate goal of
+            our
+            journey, here on the earth and it is for children we must provide this for they are our ultimate one and
+            only
+            one
+            investment. In this sequence, I must add it is very much necessary to invigorate the inner soul, of a child
+            for
+            the
+            righteous cause, so that he can able to adjudge the righteous path.My Best Wishes to Gyan Ganga College Of
+            Technology in achieving its mission.
+            <i class="right quote icon"></i>
+        </blockquote>
+    </div>
+    <div class="mem-info-left">
+        <div class="ui header">Er. D. C. Jain</div>
+        <p>Chief Patron</p>
+    </div>
+
+    <div class="divide"></div>
+
+    <div class="right-quote">
+        <img src="{% static 'website/images/management/vkjain.jpg' %}" class="ui left floated image circular">
+        <blockquote>
+            <i class="left quote icon"></i>
+            I am pleased to know that the history of Gyan Ganga College of Technology is punctuated by a number of
+            proud landmarks and has become a familiar name in the corporate and multinational set ups. I extend my
+            sincere wishes to the Institute that it would continue to emerge with new landmarks contribute to the pride
+            of the City of Jabalpur and the State of Madhya Pradesh.
+            <i class="right quote icon"></i>
+        </blockquote>
+    </div>
+    <div class="mem-info-right">
+        <div class="ui header">Er. V. K. Jain</div>
+        <p>Chief Patron</p>
+    </div>
+
+{% endblock %}

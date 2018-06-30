@@ -1,0 +1,50 @@
+{% extends "website/management/mgmt_base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block mgmt_content %}
+    {% load static %}
+
+    <div class="left-quote">
+        <div>
+            <img src="{% static 'website/images/management/pankajgoyal.jpg' %}" class="ui right floated image circular">
+        </div>
+        <blockquote>
+            <i class="left quote icon"></i>
+            It is a matter of immense pride for me that the contribution of Gyan Ganga College of Technology Jabalpur
+            in modern corporate set ups across the world is gaining tremendous recognition not only for the technical
+            insight of the students in the subject matter but also for the work culture demonstrated by them in the
+            respective set up. I extend my sincere wishes that the students and faculty members of the College will
+            continue to add new dimensions in defining its distinction and glory.
+            <i class="right quote icon"></i>
+        </blockquote>
+    </div>
+    <div class="mem-info-left">
+        <div class="ui header">Mr. Pankaj Goyal</div>
+        <p>Executive Director</p>
+        <p>Gyan Ganga Group</p>
+    </div>
+
+    <div class="divide"></div>
+
+    <div class="right-quote">
+        <img src="{% static 'website/images/management/apurvasinghai.jpg' %}" class="ui left floated image circular">
+        <blockquote>
+            <i class="left quote icon"></i>
+            The technical academia in the recent years has acquired a complex form that seeks definition not only in
+            the realm of academic accomplishments but also in various other aspects of human existence such as social
+            awareness, nationalistic fervor and uncompromising adherence to human values. As a proud citizen of the
+            world of science and technology I perceive Gyan Ganga College of Technology as the most conspicuous planet
+            glittering with distinction in every plane defining technical education. I extend my hearty greetings and
+            well wishes to the Institute with unfading hope that it will continue to produce new gems in the world of
+            science and technology.
+            <i class="right quote icon"></i>
+        </blockquote>
+    </div>
+    <div class="mem-info-right">
+        <div class="ui header">Mr. Apurva Singhai</div>
+        <p>Chief Patron</p>
+    </div>
+{% endblock %}

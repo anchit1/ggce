@@ -1,0 +1,35 @@
+{% extends "website/base.html" %}
+
+{% block static_files %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/mgmt.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div style="background-color: #fafafa; padding: 5rem 0;">
+        <div class="ui stackable container grid">
+            <div class="three wide column">
+                <div class="ui vertical fluid menu borderless huge">
+                    <div class="item">
+                        <div class="header">Quick Links</div>
+                        <div class="ui divider"></div>
+                        <div class="menu">
+                            <a class="item" href="{% url 'chief_patrons' %}">Chief Patrons</a>
+                            <a class="item" href="{% url 'secretary' %}">Secretary</a>
+                            <a class="item" href="{% url 'exec_director' %}">Executive Director</a>
+                            <a class="item" href="{% url 'members_mgmt' %}">Members of Management</a>
+                            <a class="item" href="{% url 'grp_director' %}">Group Director</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thirteen wide column">
+                <div id="mgmt-content">
+                    {% block mgmt_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

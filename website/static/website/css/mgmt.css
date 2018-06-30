@@ -1,0 +1,55 @@
+#mgmt-content {
+}
+
+.left-quote, right-quote {
+    margin: 5rem 0;
+}
+
+.left-quote blockquote {
+    border-left: 0.5rem solid crimson;
+    /*padding-left: 1rem;*/
+    padding: 0 1rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04rem;
+}
+
+.mem-info-left{
+    padding-left: 4rem;
+    /*margin-top: -1.5rem;*/
+}
+
+.mem-info-right {
+    text-align: right;
+    padding-right: 4rem;
+    /*margin-top: -1.5rem;*/
+}
+
+.mem-info-right, .mem-info-left .header {
+    margin-bottom: 0px;
+}
+
+.mem-info-right, .mem-info-left p {
+    margin: 0;
+}
+
+.right-quote blockquote {
+    border-right: 0.5rem solid royalblue;
+    padding-right: 1rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04rem;
+}
+
+i {
+    margin: 0 10rem 0 1rem;
+}
+
+.divide {
+    width: 30%;
+    margin: 5rem auto;
+    height: 1px;
+    background-color: darkgrey;
+}

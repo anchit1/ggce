@@ -1,0 +1,15 @@
+#grid-container {
+    padding-top: 1rem;   
+}
+
+#sidebar-left {
+    /* background-color: #fafafa; */
+}
+
+#main-content {
+    margin-top: 1rem;
+}
+
+#content-container {
+    padding: 1rem 0;
+}

@@ -1,0 +1,171 @@
+/* ****** This style includes header and footer ******* */
+
+#header-menu .item{
+    font-family: 'Lato', sans-serif;
+    color: #f5f5f5;
+}
+
+#header-menu .item:hover {
+    font-weight: 700;
+}
+
+#header-menu {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#header2-container {
+    /* background: linear-gradient(rgba(0,0,0,0.5), transparent); */
+    color: white;
+    background-color: rgb(0, 39, 59);
+}
+
+#about-header-menu .header {
+    color: rgb(0, 50, 77) !important;
+}
+
+
+
+.header + .list {
+    margin-top: -0.5rem;
+}
+
+.sticky {
+    -webkit-box-shadow: 0px 3px 15px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 15px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 15px -8px rgba(0,0,0,0.75);
+    /* -webkit-animation: fade-to-white 1s forwards;
+    animation: fade-to-white 0.3s forwards; */
+}
+
+@-webkit-keyframes fade-to-white {
+    from { background-color: transparent; }
+    to { background-color: white; }
+}
+
+@keyframes fade-to-white {
+    from { background-color: transparent; }
+    to { background-color: white; }
+}
+
+.back-main {
+    background-image: url("../images/RandOne.jpg");
+}
+
+#header1-container {
+    min-height: 8vh;
+    background-color: rgb(0, 50, 77);
+    display: flex;
+    color: lightgrey;
+}
+
+#brand {
+    font-family: 'Lato';
+    margin: 0 0 -0.8rem 0;
+    padding: 1rem 0;
+}
+
+.header-menu {
+    display: none;
+}
+
+#header-nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: beige;
+}
+
+#footer #footer-sec-1 p {
+    font-family: 'Catamaran';
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#footer-sec-1 img {
+    height: 40%;
+}
+
+/* MAPS */
+#map {
+    width: 100;
+    height: 20rem;
+}
+
+#spacer {
+    width: 100%;
+    height: 10px;
+}
+
+#content {
+    /* margin-top: -3.37rem; */
+}
+
+.footer-end {
+    font-family: 'Catamaran';
+    color: lightgray; 
+    height: 2.5rem; 
+    line-height: 2rem;
+}
+
+.footer-end > a {
+    border-bottom: 1px dotted lightgray; 
+    color: lightgray; 
+}
+
+.footer-end > a:hover {
+    cursor: pointer;
+}
+
+/************************ TIPPY THEME ********************************/
+/************ Theme for dropdown **********************************/
+.tippy-tooltip.dropdown-theme {
+    background-color: #f1f1f1;
+    color: #333;
+    border-bottom: 0.1rem solid rgb(0, 39, 59);
+    -webkit-box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.75);
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.dropdown-theme .tippy-arrow {
+    border-bottom: 7px solid white;
+}
+
+.tippy-tooltip.dropdown-theme .tippy-content {
+    /* Your styling here. Example: */
+    width: 35rem;
+}
+
+.menu-grid .header {
+    color: rgb(28, 74, 173);
+    font-size: 0.8rem;
+}
+
+.header-link {
+    padding: 1rem 0;
+    display: block;
+}
+
+.menu-grid .item {
+    color: #333 !important; 
+}
+
+.menu-grid .item:hover {
+    color: rgb(28, 74, 173) !important;
+}
+
+.footer-link {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    margin: 1.5rem 0;
+}

@@ -1,0 +1,32 @@
+{% extends "website/management/mgmt_base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block mgmt_content %}
+    {% load static %}
+
+    <div class="left-quote">
+        <div>
+            <img src="{% static 'website/images/management/maneeshchoubey.jpg' %}" class="ui right floated image circular">
+        </div>
+        <blockquote>
+            <i class="left quote icon"></i>
+            "It is a matter of immense pride and pleasure that Gyan Ganga College of Technology Jabalpur is measuring
+            new heights with every new epoch. The feelings grow stronger in the light of the fact that I have been
+            the Founder Principal of the college committed alike to academic magnificence and moral and ethical
+            commitment to the society and the nation at large. I extend my sincere wishes to the members of the Family
+            and hope that the tradition of academic excellence and ethical magnificence will turn out to be an
+            everlasting phenomenon shaping and grooming the leaders of the world of science and technology. I sincere
+            hope that the website ggct.co.in, in its brief ambit will successfully enshrine all the aspects of the
+            College defining its glory and fame. "
+            <i class="right quote icon"></i>
+        </blockquote>
+    </div>
+    <div class="mem-info-left">
+        <div class="ui header">Dr. Maneesh Choubey</div>
+        <p>Group Director</p>
+        <p>Gyan Ganga Group</p>
+    </div>
+{% endblock %}

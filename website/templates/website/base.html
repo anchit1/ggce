@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> {% load static %}
+  <link href="https://fonts.googleapis.com/css?family=Lato:700,300,100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/semantic.min.css' %}">
+  <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+  <!-- static files -->
+  {% block static_files %}
+  {% endblock static_files %}
+  
+  <title>GGCE | {% block title %}{% endblock %}</title>
+</head>
+
+<body>
+  
+  <div id="header-nav-container">
+    <header id="header1-container">
+      <div class="ui container doubling grid">
+        <div class="six wide mobile two wide computer column">
+          <img src="{% static 'website/images/base/logo1.png' %}" class="ui tiny image">
+        </div>
+        <div class="ten wide mobile six wide computer column">
+          <h2 id="brand">Gyan Ganga College of Excellence</h2>
+          <p>Approved by AICTE & Affiliated to RDVV</p>
+        </div>
+      </div>
+    </header>
+    
+    
+    <div id="header2-container">
+      <div class="ui container centered text">
+        <div id="header-menu" class="ui text stackable menu huge">
+          
+          <a id="home" class="item" title="GGCE" href="{% url 'about' %}">Home</a>
+          
+          <a id="about-header" class="item">About Us</a>
+          <div id="about-header-menu" class="header-menu">
+            <div class="ui basic segment left aligned two column grid menu-grid">
+              <div class="eight wide column">
+                <a class="ui header header-link" href="http://www.gyanganga.net/" target="_blank">Gyan Ganga Group</a>
+                <a class="ui header header-link" href="{% url 'chief_patrons' %}">Management</a>
+                <div class="ui list">
+                  <a class="item" href="{% url 'chief_patrons' %}">Chief Patron</a>
+                  <a class="item" href="{% url 'secretary' %}">Secretary</a>
+                  <a class="item" href="{% url 'exec_director' %}">Executive Director</a>
+                  <a class="item" href="{% url 'members_mgmt' %}">Members of Management</a>
+                  <a class="item" href="{% url 'grp_director' %}">Group Director</a>
+                </div>
+              </div>
+              
+              <div class="eight wide column">
+                <a href="" class="ui header header-link">Vision</a>
+                <a href="" class="ui header header-link">Gallery</a>
+                <a href="" class="ui header header-link">Contact us</a>
+              </div>
+            </div>
+          </div>
+    
+          <a id="courses-header" class="item">Courses</a>
+          <div id="courses-header-menu" class="header-menu">
+            <div class="ui basic segment left aligned two column grid menu-grid">
+              <div class="eight wide column">
+                <a class="ui header header-link" href="{% url 'bsc' %}">B. Sc.</a>
+                <div class="ui list abc">
+                  <a class="item" href="{% url 'bsc_pcm' %}">PCM</a>
+                  <a class="item" href="{% url 'bsc_ca' %}">Computer Application</a>
+                </div>
+                <a class="ui header header-link" href="{% url 'bba' %}">B. B. A.</a>
+              </div>
+              
+              <div class="eight wide column">
+                <a class="ui header header-link" href="{% url 'bcom' %}">B. Com.</a>
+                <div class="ui list">
+                  <a class="item" href="{% url 'bcom' %}">Plain</a>
+                  <a class="item" href="{% url 'bcom' %}">Computer Application</a>
+                  <a class="item" href="{% url 'bcom' %}">Tax Procedures and Practices</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a id="dept" href="{% url 'cse_about' %}" class="item">Departments</a>
+          <a id="train" class="item" >Traning & Placement</a>
+          <a id="workshop" class="item">Workshops</a>
+          <a id="admission" class="item">Admission</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="spacer"></div>
+
+  <div id="content">
+    {% block content %}
+    {% endblock content %}
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="ui container stackable four column grid">
+      <div class="column three wide" id="footer-sec-1">
+        <img src="{% static 'website/images/base/logo1.png' %}">
+        <h4>Gyan Ganga College of Excellence</h4>
+        <p>Near Bargi Hills,</p>
+        <p>Tilwaraa Ghat Road</p>
+        <p>Jabalpur (482003)</p>
+          <br>
+          <p>&copy;2018 Gyan Ganga College of Excellence</p>
+      </div>
+      
+      <div class="column four wide">
+{#        <div class="ui list">#}
+{#            <a class="list footer-link" href="">Link 1</a>#}
+{#            <a class="list footer-link" href="">Link 2</a>#}
+{#            <a class="list footer-link" href="">Link 3</a>#}
+{#            <a class="list footer-link" href="">Link 4</a>#}
+{#            <a class="list footer-link" href="">Link 5</a>#}
+{#        </div>#}
+      </div>
+      
+      <div class="column five wide"></div>
+
+      <div class="column four wide">
+        <div id="map"></div>
+      </div>
+    </div>
+  </footer>
+  
+  <footer style="background-color: #212121;">
+      <!-- <p class="footer-end" style="text-align: center;">&copy; 2018 Gyan Ganga College College of Excellence</p> -->
+      <p class="ui footer-end center aligned container">Designed and developed at 
+        <a>Gyan Ganga</a></p>
+  </footer>
+
+  <script src="{% static 'website/js/tippy_all.min.js' %}"></script>
+  <script src="{% static 'website/js/base.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfQjBs1uPX0AE5jnVZ06T-zPBiCVCIShQ&callback=initMap"></script>
+  {% block scripts %}
+  {% endblock scripts %}
+  
+</body>
+
+</html>

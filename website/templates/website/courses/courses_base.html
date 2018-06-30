@@ -1,0 +1,34 @@
+{% extends "website/base.html" %}
+
+{% block content %}
+    {% block static_files %}
+
+    {% endblock %}
+
+    <div style="background-color: #fafafa; padding: 5rem 0;">
+        <div class="ui stackable container grid">
+            <div class="three wide column">
+                <div class="ui vertical fluid menu borderless huge">
+                    <div class="item">
+                        <div class="header">Courses</div>
+                        <div class="ui divider"></div>
+                        <div class="menu">
+                            <a class="item" href="{% url 'bsc' %}">B. Sc.</a>
+                            <a class="item" href="{% url 'bcom' %}">B. Com.</a>
+                            <a class="item" href="{% url 'bba' %}">B. B. A.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thirteen wide column">
+                <div id="mgmt-content">
+                    <div class="ui segment" style="padding: 1.5rem 2.5rem;">
+                        {% block course_content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
