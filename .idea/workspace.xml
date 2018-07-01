@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9b9a8ad-ae0d-44f0-8212-d37a52319d89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ggce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ggce/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="e9b9a8ad-ae0d-44f0-8212-d37a52319d89" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,8 +255,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49926794" weight="0.7385827" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25454545" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49926794" weight="0.34330708" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25454545" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
